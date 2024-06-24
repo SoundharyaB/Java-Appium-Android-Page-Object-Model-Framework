@@ -36,7 +36,7 @@ As in above with below functions
 - reportsFillForm.png - Screenshot captured while execution
 
 
-**## Framework Advantages:**
+## Framework Advantages
 1. Modularity and Reusability with Enhanced Readability and Maintainability:
 2. Clear Structure supports easier to understand, modify and Simplified Debugging/quicker troubleshooting.
 3. Improved Test Design and Scalability.
