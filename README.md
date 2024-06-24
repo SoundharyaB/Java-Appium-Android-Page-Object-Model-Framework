@@ -1,4 +1,4 @@
-**## Appium Mobile Automation Framework**
+## Appium Mobile Automation Framework
 Implemented an Android mobile automation framework using Page Object Model that enhances maintainability, scalability, and collaboration in testing efforts. It promotes structured test design, improves test efficiency, and supports agile development practices by facilitating rapid feedback loops. By encapsulating UI interactions into reusable components (Page Objects), teams can achieve more reliable and maintainable automated tests across different Android devices and versions.
 
 ## Prerequisites
