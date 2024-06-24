@@ -29,10 +29,11 @@ Implemented an Android mobile automation framework using Page Object Model that 
 
 ## Project Structure
 As in above with below functions
-src/main/java - Object repos, utils
-src/main/test - Test Scripts
-src/main/java/resources - GS.apk file and data properties file
-reports - index.html extent test reports
+- src/main/java - Object repos, utils
+- src/main/test - Test Scripts
+- src/main/java/resources - GS.apk file and data properties file
+- reports - index.html extent test reports
+- reportsFillForm.png - Screenshot captured while execution
 
 
 **## Framework Advantages:**
