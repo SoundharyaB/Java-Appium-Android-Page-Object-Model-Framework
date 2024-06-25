@@ -19,7 +19,7 @@ Implemented an Android mobile automation framework using Page Object Model that 
 2. **Install dependencies:**
     Ensure you have all the necessary dependencies installed by running:
     ```bash
-    mvn clean install (or above Prerequisites)
+    mvn clean install (or above Prerequisites viam pom.xml)
 
 **## Run test suite/specific tests:**
     You can also run specific test suites by specifying the suite XML file:
