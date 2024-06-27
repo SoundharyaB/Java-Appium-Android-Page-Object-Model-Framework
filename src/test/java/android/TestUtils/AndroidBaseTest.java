@@ -45,7 +45,7 @@ public class AndroidBaseTest extends AppiumUtils {
 		String port = prop.getProperty("port");
 		service = startAppiumServer(ipAddress, Integer.parseInt(port));
 		UiAutomator2Options options = new UiAutomator2Options();
-		options.setDeviceName(prop.getProperty("myEmulator")); //emulator
+		options.setDeviceName(prop.getProperty("Emulator")); //emulator
 		//options.setDeviceName("Android Device");// real device
 		options.setApp(System.getProperty("user.dir") + "//src//main//resources//GS.apk");
         driver = new AndroidDriver(service.getUrl(), options);
