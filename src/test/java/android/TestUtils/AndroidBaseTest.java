@@ -1,29 +1,12 @@
 package android.TestUtils;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebElement;
 import android.pageObjects.FormPage;
 import android.utils.AppiumUtils;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -46,7 +29,6 @@ public class AndroidBaseTest extends AppiumUtils {
 		service = startAppiumServer(ipAddress, Integer.parseInt(port));
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName(prop.getProperty("myEmulator")); //emulator
-		//options.setDeviceName("Android Device");// real device
 		options.setApp(System.getProperty("user.dir") + "//src//main//resources//GS.apk");
         driver = new AndroidDriver(service.getUrl(), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

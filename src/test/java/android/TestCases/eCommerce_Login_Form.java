@@ -1,4 +1,4 @@
-package android;
+package android.TestCases;
 import org.testng.annotations.Test;
 import com.google.common.collect.ImmutableMap;
 import org.testng.AssertJUnit;
@@ -8,7 +8,7 @@ import android.TestUtils.AndroidBaseTest;
 import org.testng.annotations.BeforeMethod;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.Activity;
-public class eCommerce_tc_2 extends AndroidBaseTest {
+public class eCommerce_Login_Form extends AndroidBaseTest {
 
     @BeforeMethod
     public void preSetup() {
@@ -20,7 +20,6 @@ public class eCommerce_tc_2 extends AndroidBaseTest {
 
     @Test
     public void FillForm_ErrorValidation() throws InterruptedException {
-
         driver.hideKeyboard();
         driver.findElement(By.xpath("//android.widget.RadioButton[@text='Female']")).click();
         driver.findElement(By.id("android:id/text1")).click();
@@ -28,7 +27,7 @@ public class eCommerce_tc_2 extends AndroidBaseTest {
         driver.findElement(By.xpath("//android.widget.TextView[@text='India']")).click();
         driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
         String toastMessage = driver.findElement(By.xpath("(//android.widget.Toast)[1]")).getAttribute("name");
-        AssertJUnit.assertEquals(toastMessage, "Please your name");
+        AssertJUnit.assertEquals(toastMessage, "Please enter your name");
     }
 
     @Test

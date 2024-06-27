@@ -56,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Jun 24, 2024 07:57:07 pm</span>
+                    <span class="badge badge-primary">Jun 26, 2024 01:17:49 pm</span>
                 </a>
             </li>
         </ul>
@@ -108,7 +108,7 @@
 					<i class="fa fa-exclamation-circle"></i>
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
+						
 						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 						
 						
@@ -122,55 +122,7 @@
 		</div>
 		<div class="test-list-wrapper scrollable">
 			<ul class="test-list-item">
-				<li class="test-item"  status="pass" test-id="1"
-					author=""
-					tag=""
-					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
-					</div>
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">FillForm</p>
-							<p class="duration text-sm">0h 1m 2s+309ms</p>
-							<span class="datetime">19:57:56 pm</span>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="detail-head">
-							<div class="p-v-10 d-inline-block">
-								<div class="info">
-									<h5 class="test-status text-pass">FillForm</h5>
-									<span class='badge badge-success'>06.24.2024 19:57:56</span>
-									<span class='badge badge-danger'>06.24.2024 19:58:58</span>
-									<span class='badge badge-default'>0h 1m 2s+309ms</span>
-								</div>
-								<div class="m-t-10 m-l-5">
-									
-								</div>
-							</div>
-						</div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>7:58:58 pm</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
-					</div>
-				</li>
-				<li class="test-item"  status="fail" test-id="2"
+				<li class="test-item"  status="fail" test-id="1"
 					author=""
 					tag=""
 					device="">
@@ -180,8 +132,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">FillForm</p>
-							<p class="duration text-sm">0h 0m 10s+886ms</p>
-							<span class="datetime">19:58:59 pm</span>
+							<p class="duration text-sm">0h 1m 27s+905ms</p>
+							<span class="datetime">13:19:02 pm</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -189,9 +141,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-fail">FillForm</h5>
-									<span class='badge badge-success'>06.24.2024 19:58:59</span>
-									<span class='badge badge-danger'>06.24.2024 19:59:10</span>
-									<span class='badge badge-default'>0h 0m 10s+886ms</span>
+									<span class='badge badge-success'>06.26.2024 13:19:02</span>
+									<span class='badge badge-danger'>06.26.2024 13:20:30</span>
+									<span class='badge badge-default'>0h 1m 27s+905ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -208,15 +160,29 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-times text-fail"></i></td>
-				<td>7:59:10 pm</td>
+				<td>1:20:30 pm</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: com.androidsample.generalstore:id/nameField})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$oCEFSYMi.sendKeys(Unknown Source)
-	at android.pageObjects.FormPage.setNameField(FormPage.java:41)
-	at android.eCommerce_tc_4_Hybrid.FillForm(eCommerce_tc_4_Hybrid.java:18)
+						<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9b985f30-ce03-43da-9863-3783ed055510, clickElement {id=00000000-0000-0014-ffff-ffff00000047}]
+Capabilities {appium:app: C:\Users\Rammohan\IdeaProje..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Rammohan\IdeaProje..., automationName: UIAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 118, appium:takesScreenshot: true, appium:viewportRect: {height: 2282, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (9b985f30-ce03-43da-9863-3783ed055510)] -> xpath: //android.widget.TextView[@text='India']]
+Session ID: 9b985f30-ce03-43da-9863-3783ed055510
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at android.pageObjects.FormPage.setCountrySelection(FormPage.java:63)
+	at android.TestCases.eCommerce_tc_4_Hybrid.FillForm(eCommerce_tc_4_Hybrid.java:20)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
@@ -242,46 +208,64 @@
 	at org.testng.TestNG.run(TestNG.java:1060)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@de81be1 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 30 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.id: com.androidsample.generalstore:id/nameField})
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+</textarea>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>1:20:30 pm</td>
+				<td>
+						<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: driver.version: RemoteWebDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 32 more
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [9b985f30-ce03-43da-9863-3783ed055510, screenshot {}]
+Capabilities {appium:app: C:\Users\Rammohan\IdeaProje..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Rammohan\IdeaProje..., automationName: UIAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 118, appium:takesScreenshot: true, appium:viewportRect: {height: 2282, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9b985f30-ce03-43da-9863-3783ed055510
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
+	at io.appium.java_client.AppiumDriver.getScreenshotAs(AppiumDriver.java:316)
+	at android.utils.AppiumUtils.getScreenshotPath(AppiumUtils.java:56)
+	at android.TestUtils.Listeners.onTestFailure(Listeners.java:51)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:99)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:276)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:744)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 </textarea>
 				</td>
 			</tr>
 	</tbody>
 </table>
-</div>
-<div class="detail-foot">
-	<ul class="attachments">
-		<li>
-			<a href="#" data-featherlight="image">
-				<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\Rammohan\IdeaProjects\AppiumPOC//reportsFillForm.png' src='C:\Users\Rammohan\IdeaProjects\AppiumPOC//reportsFillForm.png'>
-			</a>
-		</li>
-	</ul>
 </div>
 					</div>
 				</li>
@@ -325,13 +309,13 @@ Driver info: driver.version: RemoteWebDriver
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">org.openqa.selenium.NoSuchElementException</p>
+							<p class="name">org.openqa.selenium.WebDriverException</p>
 							<p class="duration text-sm">1 tests</p>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="info">
-							<h4>org.openqa.selenium.NoSuchElementException</h4>
+							<h4>org.openqa.selenium.WebDriverException</h4>
 						</div>
 						<table class='table table-sm mt-4'>
 							<thead>
@@ -348,8 +332,8 @@ Driver info: driver.version: RemoteWebDriver
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>19:58:59 pm</td>
-									<td class='linked' test-id='2'>
+									<td>13:19:02 pm</td>
+									<td class='linked' test-id='1'>
 										FillForm
 									</td>
 								</tr>
@@ -388,12 +372,12 @@ Driver info: driver.version: RemoteWebDriver
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='50%'>
-						<b>1</b> tests passed
+					<div><small data-tooltip='0%'>
+						<b>0</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='50%'><b>1</b> tests failed, 
+						<small data-tooltip='100%'><b>1</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -411,9 +395,9 @@ Driver info: driver.version: RemoteWebDriver
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='50%'><b>1</b> events passed</small></div>
+					<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 					<div>
-						<small data-tooltip='50%'><b>1</b> events failed, 
+						<small data-tooltip='100%'><b>2</b> events failed, 
 						<b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -428,10 +412,10 @@ Driver info: driver.version: RemoteWebDriver
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Tests</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">2</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">1</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>50.00%</span>
+							<span>.00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -447,7 +431,7 @@ Driver info: driver.version: RemoteWebDriver
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Jun 24, 2024 07:57:07 pm</h4>
+							<h4 class="font-weight-light mt-4">Jun 26, 2024 01:17:49 pm</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -463,7 +447,7 @@ Driver info: driver.version: RemoteWebDriver
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 2m 10s+625ms</h4>
+							<h4 class="font-weight-light mt-4">0h 3m 1s+912ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -516,8 +500,8 @@ Driver info: driver.version: RemoteWebDriver
 </div>
 <script>
 	var statusGroup = {
-	    parentCount: 2,
-		passParent: 1,
+	    parentCount: 1,
+		passParent: 0,
 		failParent: 1,
 		fatalParent: 0,
 		errorParent: 0,
@@ -545,8 +529,8 @@ Driver info: driver.version: RemoteWebDriver
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
 		eventsCount: 2,
-		passEvents: 1,
-		failEvents: 1,
+		passEvents: 0,
+		failEvents: 2,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
@@ -558,7 +542,7 @@ Driver info: driver.version: RemoteWebDriver
 </script>
 <script>
 	var timeline = {
-	        "FillForm":62.309,"FillForm":10.886
+	        "FillForm":87.905
 	};
 </script>
                 </div>
